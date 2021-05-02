@@ -36,7 +36,7 @@ class Square_v2(Shape2D): # Idea: Vertices from rotate one point 90 degree * 4 t
 
 
 def show_square(point, angle): # rotate angle indicates square rotate animation angle
-    squarev2 = Square_v2([0,0])
+    squarev2 = Square_v2([0.5,0.5])
     vertices, edges = squarev2.get_verticies_edges(start_point=point)
     glBegin(GL_LINES)
     for edge in edges:
@@ -69,4 +69,4 @@ def main(point):
         pygame.time.wait(1000)
 
 if __name__ == "__main__":
-    main([1,1]) 
+    main([1,0.8])
